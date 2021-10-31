@@ -1,6 +1,6 @@
 # Security questionnaire
 
-Source : [https://github.com/tadwhitaker/Security_Engineer_Interview_Questions/blob/master/security-interview-questions.md]
+[Source](https://github.com/tadwhitaker/Security_Engineer_Interview_Questions/blob/master/security-interview-questions.md)
 
 ## Encryption and Authentication
 
