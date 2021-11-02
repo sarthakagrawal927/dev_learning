@@ -16,3 +16,6 @@
 [submodule "sysAdminQs"]
 	path = sysAdminQs
 	url = https://github.com/trimstray/test-your-sysadmin-skills.git
+[submodule "BugBounty"]
+	path = BugBounty
+	url = https://github.com/nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters
