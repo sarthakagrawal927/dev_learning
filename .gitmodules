@@ -1,0 +1,6 @@
+[submodule "security"]
+	path = security
+	url = https://github.com/tadwhitaker/Security_Engineer_Interview_Questions
+[submodule "MLFullStack"]
+	path = MLFullStack
+	url = https://github.com/logancyang/my-cs-degree
