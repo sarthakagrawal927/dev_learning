@@ -22,3 +22,6 @@
 [submodule "Backend"]
 	path = Backend
 	url = https://github.com/arialdomartini/Back-End-Developer-Interview-Questions.git
+[submodule "Frontend"]
+	path = Frontend
+	url = https://github.com/h5bp/Front-end-Developer-Interview-Questions.git
