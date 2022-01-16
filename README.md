@@ -15,4 +15,27 @@
 ## Performance 2 - React Mode
 
 * Code splitting via Lazy loading.
-*Performance optimizing via memoization, rerendering only necessary files.
+* Performance optimizing via memoization, rerendering only necessary files.
+
+## Cloud Devops ( AWS )
+
+* EC2 - Server in cloud
+* Elastic Block Store - to increase capacity of instance
+* VPC - Secure EC2
+* Lambda - Run functions on need basis
+* Elastic Bean Stalk - Manages EC2, Autoscaling, Deployment, load balancers, etc out of the box.
+* S3 - Storage
+* S3-Glacier - Archive
+* DynamoDB - NoSQL DB
+* Cloudfront - CDN
+* Redshift - Big data - analyzing, fast access data
+* Shield - Secure EC2 from attacks
+* WAF - Firewall
+* IAM - Identity & Access Management - Roles, User, Policies etc
+* Route53 - DNS, resource checkup
+* Elasticity - Automatically scale up/down
+* Load Balancer - Load balancing between servers
+* Simple Notification Service, Simple Queue Service
+* Elastic Container Service - Managing Docker Containers
+* CloudWatch - Collect & Track Metrics
+* CloudTrail - Audit all activity in AWS
