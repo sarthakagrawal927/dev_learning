@@ -39,3 +39,4 @@
 * Elastic Container Service - Managing Docker Containers
 * CloudWatch - Collect & Track Metrics
 * CloudTrail - Audit all activity in AWS
+* CloudFormation - Set up everything via scripts
