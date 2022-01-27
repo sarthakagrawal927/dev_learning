@@ -25,3 +25,6 @@
 [submodule "Frontend"]
 	path = Frontend
 	url = https://github.com/h5bp/Front-end-Developer-Interview-Questions.git
+[submodule "frontendLearningKit"]
+	path = frontendLearningKit
+	url = https://github.com/sadanandpai/frontend-learning-kit.git
