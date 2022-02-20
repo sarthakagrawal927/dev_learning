@@ -40,3 +40,11 @@
 * CloudWatch - Collect & Track Metrics
 * CloudTrail - Audit all activity in AWS
 * CloudFormation - Set up everything via scripts
+
+## Top qualities
+
+1. Analytical Problem solving with code
+2. Technical Communication
+3. Engineering Best practices & approaches.
+4. Non-tech Communication
+5. Computer & Language experiences.
