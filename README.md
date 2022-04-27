@@ -1,5 +1,11 @@
 # intermediate_web
 
+Has a lot of interesting submodules. Keep them updated
+
+```bash
+git pull --recurse-submodules
+```
+
 ## Performance 1 - Network Requests
 
 * HTML, CSS, JS - Compressed via webpack (auto usually)
