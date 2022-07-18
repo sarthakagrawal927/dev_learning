@@ -34,3 +34,9 @@
 [submodule "90DaysOfDevOps"]
 	path = 90DaysOfDevOps
 	url = https://github.com/MichaelCade/90DaysOfDevOps.git
+[submodule "devops-exercises"]
+	path = devops-exercises
+	url = https://github.com/bregman-arie/devops-exercises
+[submodule "devops-resources"]
+	path = devops-resources
+	url = https://github.com/bregman-arie/devops-resources
