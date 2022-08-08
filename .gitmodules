@@ -1,39 +1,33 @@
-[submodule "security"]
-	path = security
+[submodule "Security_Engineer_Interview_Questions"]
+	path = securityQs
 	url = https://github.com/tadwhitaker/Security_Engineer_Interview_Questions
-[submodule "MLFullStack"]
+[submodule "my-cs-degree"]
 	path = MLFullStack
 	url = https://github.com/logancyang/my-cs-degree
-[submodule "JSQs"]
+[submodule "javascript-interview-questions"]
 	path = JSQs
 	url = https://github.com/sudheerj/javascript-interview-questions
-[submodule "reactQues"]
-	path = reactQues
+[submodule "reactjs-interview-questions"]
+	path = ReactQs
 	url = https://github.com/sudheerj/reactjs-interview-questions
-[submodule "sysAdminQs"]
+[submodule "test-your-sysadmin-skills"]
 	path = sysAdminQs
 	url = https://github.com/trimstray/test-your-sysadmin-skills.git
-[submodule "BugBounty"]
+[submodule "Resources-for-Beginner-Bug-Bounty-Hunters"]
 	path = BugBounty
 	url = https://github.com/nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters
-[submodule "Backend"]
-	path = Backend
+[submodule "Back-End-Developer-Interview-Questions"]
+	path = BackendQs
 	url = https://github.com/arialdomartini/Back-End-Developer-Interview-Questions.git
-[submodule "Frontend"]
-	path = Frontend
+[submodule "Front-end-Developer-Interview-Question"]
+	path = FrontendQs
 	url = https://github.com/h5bp/Front-end-Developer-Interview-Questions.git
-[submodule "frontendLearningKit"]
-	path = frontendLearningKit
-	url = https://github.com/sadanandpai/frontend-learning-kit.git
 [submodule "90DaysOfDevOps"]
 	path = 90DaysOfDevOps
 	url = https://github.com/MichaelCade/90DaysOfDevOps.git
 [submodule "devops-exercises"]
-	path = devops-exercises
+	path = DevopsQs
 	url = https://github.com/bregman-arie/devops-exercises
-[submodule "devops-resources"]
-	path = devops-resources
-	url = https://github.com/bregman-arie/devops-resources
 [submodule "system-design-resources"]
 	path = system-design-resources
 	url = https://github.com/InterviewReady/system-design-resources.git
