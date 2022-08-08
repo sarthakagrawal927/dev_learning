@@ -1,33 +1,33 @@
-[submodule "Security_Engineer_Interview_Questions"]
-	path = securityQs
+[submodule "questionnaires/Security_Engineer_Interview_Questions"]
+	path = questionnaires/Security_Engineer_Interview_Questions
 	url = https://github.com/tadwhitaker/Security_Engineer_Interview_Questions
-[submodule "my-cs-degree"]
-	path = MLFullStack
-	url = https://github.com/logancyang/my-cs-degree
-[submodule "javascript-interview-questions"]
-	path = JSQs
+[submodule "questionnaires/javascript-interview-questions"]
+	path = questionnaires/javascript-interview-questions
 	url = https://github.com/sudheerj/javascript-interview-questions
-[submodule "reactjs-interview-questions"]
-	path = ReactQs
+[submodule "questionnaires/reactjs-interview-questions"]
+	path = questionnaires/reactjs-interview-questions
 	url = https://github.com/sudheerj/reactjs-interview-questions
-[submodule "test-your-sysadmin-skills"]
-	path = sysAdminQs
-	url = https://github.com/trimstray/test-your-sysadmin-skills.git
-[submodule "Resources-for-Beginner-Bug-Bounty-Hunters"]
-	path = BugBounty
-	url = https://github.com/nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters
-[submodule "Back-End-Developer-Interview-Questions"]
-	path = BackendQs
-	url = https://github.com/arialdomartini/Back-End-Developer-Interview-Questions.git
-[submodule "Front-end-Developer-Interview-Question"]
-	path = FrontendQs
-	url = https://github.com/h5bp/Front-end-Developer-Interview-Questions.git
-[submodule "90DaysOfDevOps"]
-	path = 90DaysOfDevOps
-	url = https://github.com/MichaelCade/90DaysOfDevOps.git
-[submodule "devops-exercises"]
-	path = DevopsQs
+[submodule "questionnaires/test-your-sysadmin-skills"]
+	path = questionnaires/test-your-sysadmin-skills
+	url = https://github.com/trimstray/test-your-sysadmin-skills
+[submodule "questionnaires/Back-End-Developer-Interview-Questions"]
+	path = questionnaires/Back-End-Developer-Interview-Questions
+	url = https://github.com/arialdomartini/Back-End-Developer-Interview-Questions
+[submodule "questionnaires/Front-end-Developer-Interview-Questions"]
+	path = questionnaires/Front-end-Developer-Interview-Questions
+	url = https://github.com/h5bp/Front-end-Developer-Interview-Questions
+[submodule "questionnaires/devops-exercises"]
+	path = questionnaires/devops-exercises
 	url = https://github.com/bregman-arie/devops-exercises
-[submodule "system-design-resources"]
-	path = system-design-resources
-	url = https://github.com/InterviewReady/system-design-resources.git
+[submodule "resources/my-cs-degree"]
+	path = resources/my-cs-degree
+	url = https://github.com/logancyang/my-cs-degree
+[submodule "resources/Resources-for-Beginner-Bug-Bounty-Hunters"]
+	path = resources/Resources-for-Beginner-Bug-Bounty-Hunters
+	url = https://github.com/nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters
+[submodule "resources/90DaysOfDevOps"]
+	path = resources/90DaysOfDevOps
+	url = https://github.com/MichaelCade/90DaysOfDevOps
+[submodule "resources/system-design-resources"]
+	path = resources/system-design-resources
+	url = https://github.com/InterviewReady/system-design-resources
