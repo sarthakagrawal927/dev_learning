@@ -4,9 +4,6 @@
 [submodule "MLFullStack"]
 	path = MLFullStack
 	url = https://github.com/logancyang/my-cs-degree
-[submodule "performanceChecklists"]
-	path = performanceChecklists
-	url = https://github.com/thedaviddias/Front-End-Performance-Checklist
 [submodule "JSQs"]
 	path = JSQs
 	url = https://github.com/sudheerj/javascript-interview-questions
