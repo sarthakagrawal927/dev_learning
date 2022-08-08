@@ -28,9 +28,6 @@
 [submodule "frontendLearningKit"]
 	path = frontendLearningKit
 	url = https://github.com/sadanandpai/frontend-learning-kit.git
-[submodule "Front-End-Checklist"]
-	path = Front-End-Checklist
-	url = https://github.com/thedaviddias/Front-End-Checklist.git
 [submodule "90DaysOfDevOps"]
 	path = 90DaysOfDevOps
 	url = https://github.com/MichaelCade/90DaysOfDevOps.git
