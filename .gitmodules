@@ -40,3 +40,6 @@
 [submodule "devops-resources"]
 	path = devops-resources
 	url = https://github.com/bregman-arie/devops-resources
+[submodule "system-design-resources"]
+	path = system-design-resources
+	url = https://github.com/InterviewReady/system-design-resources.git
