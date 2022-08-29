@@ -31,3 +31,6 @@
 [submodule "resources/system-design-resources"]
 	path = resources/system-design-resources
 	url = https://github.com/InterviewReady/system-design-resources
+[submodule "system-design"]
+	path = system-design
+	url = https://github.com/karanpratapsingh/system-design.git
