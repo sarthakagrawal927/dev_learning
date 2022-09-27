@@ -34,3 +34,6 @@
 [submodule "resources/system-design2"]
 	path = resources/system-design2
 	url = https://github.com/karanpratapsingh/system-design.git
+[submodule "databases/DBMS-Indexology"]
+	path = databases/DBMS-Indexology
+	url = https://github.com/yingjunwu/DBMS-Indexology
