@@ -134,3 +134,6 @@ Slow: If a page is dirty, then write it to disk & then drop it.
 There are tradeffs between fast evictions vs dirty writing pages that will be not read again in the future.
 
 Backgroun Writing: DBMS can periodically walk through the page table and write dirty pages to disk. Then it can evict the page or unset the flag. Logs should also be maintained for disk writes.
+
+Github Copilot's recommendation: Adaptive Replacement Cache
+ARC improves on LRU by keeping track of both the most recently used pages & the most frequently used pages. It has 2 ghosts lists (B1 & B2) keeping track (just keys) of evicted pages from LRU & LFU buffers. It adjusts the size of the LRU & LFU buffers based on the hit rate of the pages in the ghosts lists. Hits in B1 will result in eviction of last element of B2. Actual implementation is more complex.
