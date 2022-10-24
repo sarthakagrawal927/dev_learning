@@ -1,4 +1,4 @@
-Access Methods: 2 types of DS : Hashtables & Trees
+Access Methods: 2 types of DS : Hash-tables & Trees
 
 DS used for Internal Meta-data, Core Data Storage, Temporary DS, Table Indexes
 
@@ -22,7 +22,7 @@ How to map a large key space into a smaller domain.
 Trade-off between - being fast vs collision date.
 
 For any input key, return an integer representation of that key.
-Cryptographic hash functions are not used, as they are slow & we don't care about crypting.
+Cryptographic hash functions are not used, as they are slow & we don't care about encrypting.
 
 Best right now : XXHash3 by Facebook.
 
@@ -45,8 +45,8 @@ Deleting:
 
 #### Non-Unique Keys
 
-Seperate Linked List
-- Store values in seperate storage area for each key.
+Separate Linked List
+- Store values in separate storage area for each key.
 
 Redundant keys (common)
 - Store duplicate keys entries in the same hash table
@@ -54,8 +54,8 @@ Redundant keys (common)
 #### 2. Robin Hood Hashing
 
 Variant of linear probe hashing that steals slots from rich keys and give them to poor keys.
-- Each key tracks the number of positions they are from their ideal osition.
-- On insert, a second key takes the slot of another key(first) if they first key is farther away from its optimal position than the seocnd key.
+- Each key tracks the number of positions they are from their ideal position.
+- On insert, a second key takes the slot of another key(first) if they first key is farther away from its optimal position than the second key.
 
 Purpose is to minimize the distance of all keys from their optimal position.
 
@@ -77,7 +77,7 @@ We also need to handle cycle cases, we need maintain the start & if we come back
 Hash table grows as needed.
 
 #### Chained Hashing
-Maintain a linkedlist of buckets for each slot in hash table. Resolve collisions by placing all elements with same hash in the same bucket (pages). Can end up as a sequential scan.
+Maintain a LinkedList of buckets for each slot in hash table. Resolve collisions by placing all elements with same hash in the same bucket (pages). Can end up as a sequential scan.
 
 #### Extendible Hashing
 
@@ -85,7 +85,7 @@ Chained Hashing approach where we split buckets instead of letting the linked li
 
 Reshuffling bucket entries on split & increase the number of bits to examine. Data movement is localized to the bucket that is split.
 
-Explaination (Disclaimer : (Wont understand by reading))
+Explanation (Disclaimer : (Wont understand by reading))
 
 Completely based on bits. We have a global depth & local depth (for each bucket). Global depth is the number of bits we use to compute the hash.
 

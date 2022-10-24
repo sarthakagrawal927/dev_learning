@@ -2,7 +2,7 @@
 
 ## Nested Queries
 
-Most optimier will try to rewrite using Joins.
+Most optimizer will try to rewrite using Joins.
 
 ALL - all rows in the inner query must satisfy the condition (Used for finding the min/max value)
 ANY - at least one row in the inner query must satisfy the condition
@@ -25,8 +25,8 @@ Special window functions:
 
 ## Common Table Expressions (CTE)
 
-Provides a way to write auxilary stateents for use in the main query.
-Temp table for just 1 query. Alternnative to nested queries & views.
+Provides a way to write auxillary statements for use in the main query.
+Temp table for just 1 query. Alternative to nested queries & views.
 
 ```sql
 WITH cte_name AS (

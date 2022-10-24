@@ -22,7 +22,7 @@ Page table - maps page ID to frame ID. Page table is stored in memory. Also main
 
 Locks:
 - Protects database's logical contents from other transactions
-- Help for trnasaction duration. To be able to rollback.
+- Help for transaction duration. To be able to rollback.
 
 Latches: (Mutex/Semaphores of OS)
 - Protects critical sections of DBMS's internal data structure from other threads.
@@ -32,24 +32,24 @@ Latches: (Mutex/Semaphores of OS)
 
 ### Page directory vs Page Table
 Page directory: Mapping from pageIDs to pageLocations in database files. All changes must be recorded to allow DBMS to find on restart.
-Page Tabke: Mapping from pageIDs to frameIDs (copy of page in buffer pool frames). In memore DS, that does not need to be stored on disk.
+Page Table: Mapping from pageIDs to frameIDs (copy of page in buffer pool frames). In memory DS, that does not need to be stored on disk.
 
 ### Allocation Policies
 Global : Make decisions for all active txns, (eg: LRU)
-Local : Allocate frames to a specific txn without considering the behaviour of concurrent txns.
+Local : Allocate frames to a specific txn without considering the behavior of concurrent txns.
 
 ## Buffer Pool Optimizations
 
 ### Multiple Buffer Pools
 DBMS can have:
-- Multiple Buffer poil instances
+- Multiple Buffer pool instances
 - Per database buffer pool
 - per page-type buffer pool
 
 Helps reduce latch contention & improve locality. Can have different allocation policies for different buffer pools.
 
 Approach 1: ObjectId
-Embeded object identifier in record Ids and then maintain a maping from objects to specific buttfer pools.
+Embedded object identifier in record Ids and then maintain a mapping from objects to specific buffer pools.
 To get data : we will then need ObjectId to get buffer pool, pageId to get page & then slotNum to get record.
 
 Approach 2: Hashing
@@ -60,11 +60,11 @@ DBMS can also prefetch pages based on query plan. Eg: If database knows that we 
 
 ### Scan Sharing
 Queries can reuse data retrieved from storage or operator commutations. NOT like result caching.
-Allow multiple queries to attach to a single cursor that scans a table. Queries can share intermidiate data.
+Allow multiple queries to attach to a single cursor that scans a table. Queries can share intermediate data.
 
 If query starts a scan & if there is one already doing this, then the DBMS will attach to the second query's cursor. The DBMS keeps track of where the second query joined with the first so that it can finish the scan when it reaches the end of the DS. Hard to implement.
 
-The smartest systems can even share the tuplies in memory if the queries need same tuples.
+The smartest systems can even share the tuples in memory if the queries need same tuples.
 
 -- More on this in advance class.
 
@@ -81,7 +81,7 @@ Works well if operator needs to read a large sequence if pages that can be conti
 Can also be used for temporary tables.
 
 ### OS Page Cache
-Most disk operations go through OS API. OS can also cache pages in memory. Then in buffer pool from OS cache. Most DBMS wants to avoid that to use direct IO bypassing the OS's cache. Unless you tell it not to, OS maintians its own filesystem cache.
+Most disk operations go through OS API. OS can also cache pages in memory. Then in buffer pool from OS cache. Most DBMS wants to avoid that to use direct IO bypassing the OS's cache. Unless you tell it not to, OS maintains its own filesystem cache.
 
 Postgres uses OS Cache, they still has buffer pool but very less.
 
@@ -89,7 +89,7 @@ Postgres uses OS Cache, they still has buffer pool but very less.
 EXPLAIN (ANALYZE, BUFFERS) SELECT SUM(A+B) FROM testReals.
 --- This will show how many pages were read from disk & how many were read from buffer pool.
 
-SHOW shared_buffers -- shows bufer sizes (configurable)
+SHOW shared_buffers -- shows buffer sizes (configurable)
 
 SELECT pg_prewarm('testReals'); -- prewarm the buffer pool with data from table. Will only load what it can fit in buffer pool.
 ```
@@ -103,37 +103,37 @@ Most BASIC: LRU (Least Recently Used) - Maintain timestamp of when each page was
 Enterprise & expensive systems use much more advanced policies.
 
 #### Clock Algorithm
-Approximation of LRU without needing a seperate timestamp per page. Each page has a reference bit. When a page is accessed set to 1.
+Approximation of LRU without needing a separate timestamp per page. Each page has a reference bit. When a page is accessed set to 1.
 
 When DBMS wants to evict, start from the head of the list & evict the first page with reference bit 0 (ie not been accessed since last check). If it was 1, then set it to 0 & move to next page. Remember the marker position of evicted. Need to check the pinned status of the page.
 
 If you reach the page you started at, then evict the first page you find.
 
 Problems : Sequential Flooding
-- A query performs a sequential scan that reads every page. This pollutes the buffer pool with pages that are read once & then never again. The most recently used page is actually the most unneeded page. Buffer Pool Bypass or differnet Buffer Pools can help with this.
+- A query performs a sequential scan that reads every page. This pollutes the buffer pool with pages that are read once & then never again. The most recently used page is actually the most unneeded page. Buffer Pool Bypass or different Buffer Pools can help with this.
 
 #### Better Policies (LRU-K)
 
-Track history of last K references to each page as timestamps & cimpute the interval between subsequent accesses. The DBMS then uses this history to estimate the next time that page is going to be used. ML can also be heavily used in predicting which page will be used next.
+Track history of last K references to each page as timestamps & compute the interval between subsequent accesses. The DBMS then uses this history to estimate the next time that page is going to be used. ML can also be heavily used in predicting which page will be used next.
 
 #### Localization
 
 Basically use of Buffer Bypass Buffer Pool
 The DBMS chooses which pages to evict based on a per txn/query basis. This minimizes the pollution of the buffer pool from which query.
 
-Ex: Postgres maintians a small ring buffer that is private to the query.
+Ex: Postgres maintains a small ring buffer that is private to the query.
 
 #### Priority Hints
-The DBMS what the context of each page during exection. Based on query, it provides hints to buffer pool whether the page is important or not.
+The DBMS what the context of each page during execution. Based on query, it provides hints to buffer pool whether the page is important or not.
 
 
 ### Dirty Pages
 Fast: If a page is NOT dirty, then just DROP it.
 Slow: If a page is dirty, then write it to disk & then drop it.
 
-There are tradeffs between fast evictions vs dirty writing pages that will be not read again in the future.
+There are tradeoffs between fast evictions vs dirty writing pages that will be not read again in the future.
 
-Backgroun Writing: DBMS can periodically walk through the page table and write dirty pages to disk. Then it can evict the page or unset the flag. Logs should also be maintained for disk writes.
+Background Writing: DBMS can periodically walk through the page table and write dirty pages to disk. Then it can evict the page or unset the flag. Logs should also be maintained for disk writes.
 
 Github Copilot's recommendation: Adaptive Replacement Cache
 ARC improves on LRU by keeping track of both the most recently used pages & the most frequently used pages. It has 2 ghosts lists (B1 & B2) keeping track (just keys) of evicted pages from LRU & LFU buffers. It adjusts the size of the LRU & LFU buffers based on the hit rate of the pages in the ghosts lists. Hits in B1 will result in eviction of last element of B2. Actual implementation is more complex.
