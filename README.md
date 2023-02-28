@@ -4,6 +4,7 @@ Has a lot of interesting submodules. Keep them updated
 
 ```bash
 git pull --recurse-submodules
+git submodule update --remote
 ```
 
 ## Performance 1 - Network Requests
