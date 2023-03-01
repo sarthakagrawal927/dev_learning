@@ -1,3 +1,5 @@
+Refer: [Notes](https://15445.courses.cs.cmu.edu/fall2022/notes/)
+
 # Advanced SQL
 
 ## Nested Queries

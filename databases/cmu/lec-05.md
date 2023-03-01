@@ -32,7 +32,7 @@ Latches: (Mutex/Semaphores of OS)
 
 ### Page directory vs Page Table
 Page directory: Mapping from pageIDs to pageLocations in database files. All changes must be recorded to allow DBMS to find on restart.
-Page Table: Mapping from pageIDs to frameIDs (copy of page in buffer pool frames). In memory DS, that does not need to be stored on disk.
+Page Table: Mapping from pageIDs to frameIDs (copy of page in buffer pool frames). In memory, that does not need to be stored on disk.
 
 ### Allocation Policies
 Global : Make decisions for all active txns, (eg: LRU)
@@ -73,7 +73,7 @@ can even share scans across transactions. Eg: If a transaction is doing a scan &
 ### Buffer Pool Bypass
 
 The sequential scan operator will not store fetched pages in the buffer pool to avoid overhead.
-Used when I that I won't be needing the data in near future - no need to pollute the cache, nor check the page table or buffer pool. Just directly from disk.
+Used when we know that we won't be needing the data in near future - no need to pollute the cache, nor check the page table or buffer pool. Just directly from disk.
 
 Small amount of memory is allocated to the thread running the query. This memory is used to store the pages that are fetched from disk. This memory is called the bypass buffer. Once its done everything is dropped.
 
