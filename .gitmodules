@@ -67,3 +67,6 @@
 [submodule "resources/links/info"]
 	path = resources/links/info
 	url = https://gist.github.com/rava-dosa/ebbcc18323e80f74cb9434e5382d10b6
+[submodule "devops/best-practices"]
+	path = devops/best-practices
+	url = https://gist.github.com/jpswade/4135841363e72ece8086146bd7bb5d91
