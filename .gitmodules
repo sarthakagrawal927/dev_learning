@@ -73,3 +73,6 @@
 [submodule "resources/cff08fe3e0bb857ea33b47d965b3e19f"]
 	path = resources/cff08fe3e0bb857ea33b47d965b3e19f
 	url = https://gist.github.com/kconner/cff08fe3e0bb857ea33b47d965b3e19f
+[submodule "hiring/assignment"]
+	path = hiring/assignment
+	url = https://github.com/PestoTech/takehome
