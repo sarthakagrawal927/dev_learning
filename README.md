@@ -3,6 +3,8 @@
 Has a lot of interesting submodules. Keep them updated
 
 ```bash
+git submodule add [URL] [PATH]
+
 git pull --recurse-submodules
 git submodule update --remote
 ```
