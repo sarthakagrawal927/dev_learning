@@ -30,6 +30,8 @@ git submodule update --remote
 
 * EC2 - Server in cloud
 * Elastic Block Store - to increase capacity of instance
+* ECS Fargate - Serverless EC2 - auto scaling
+* App Runner - Easy to use pre-configured EC2
 * VPC - Secure EC2
 * Lambda - Run functions on need basis
 * Elastic Bean Stalk - Manages EC2, Autoscaling, Deployment, load balancers, etc out of the box.
