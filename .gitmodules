@@ -79,3 +79,6 @@
 [submodule "resources/system-design-101"]
 	path = resources/system-design-101
 	url = https://github.com/ByteByteGoHq/system-design-101.git
+[submodule "resources/system-design-q"]
+	path = resources/system-design-q
+	url = https://github.com/ashishps1/awesome-system-design-resources.git
