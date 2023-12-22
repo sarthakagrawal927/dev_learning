@@ -82,3 +82,6 @@
 [submodule "resources/system-design-q"]
 	path = resources/system-design-q
 	url = https://github.com/ashishps1/awesome-system-design-resources.git
+[submodule "resources/multiple"]
+	path = resources/multiple
+	url = https://github.com/taogen-docs/resources-of-learning.git
