@@ -85,3 +85,6 @@
 [submodule "resources/multiple"]
 	path = resources/multiple
 	url = https://github.com/taogen-docs/resources-of-learning.git
+[submodule "resources/lld"]
+	path = resources/lld
+	url = https://github.com/kumaransg/LLD.git
