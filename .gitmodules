@@ -88,3 +88,6 @@
 [submodule "resources/lld"]
 	path = resources/lld
 	url = https://github.com/kumaransg/LLD.git
+[submodule "resources/kubectl"]
+	path = resources/kubectl
+	url = https://gist.github.com/dims/bb219a4a8d9cb88dc2a2dc1f11a537c6
