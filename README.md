@@ -51,6 +51,7 @@ git submodule update --remote
 * CloudWatch - Collect & Track Metrics
 * CloudTrail - Audit all activity in AWS
 * CloudFormation - Set up everything via scripts
+* Inferentia - Inference Chips at cost of EC2
 
 ## Top qualities
 
