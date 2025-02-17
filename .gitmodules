@@ -91,3 +91,6 @@
 [submodule "resources/kubectl"]
 	path = resources/kubectl
 	url = https://gist.github.com/dims/bb219a4a8d9cb88dc2a2dc1f11a537c6
+[submodule "resources/awesome-ai-ml-resources"]
+	path = resources/awesome-ai-ml-resources
+	url = https://github.com/armankhondker/awesome-ai-ml-resources.git
