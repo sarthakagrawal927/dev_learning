@@ -398,3 +398,28 @@ A comprehensive roadmap organized by action type for achieving technical excelle
 * **Integration into Dev Workflow:** Decide how a user would use this. Maybe a CLI where you run `ai-generate-tests target_module.py` and it outputs a new `test_target_module.py`. Or a VS Code plugin that suggests tests as you write code. Packaging it as a Python package or a simple web UI to upload code could be useful. This experience of delivering a tool (not just a script) is valuable product thinking.
   **Career/product outcomes:** If you complete this, you’d demonstrate a fusion of software testing knowledge and AI – exactly what many QA teams and dev tool companies are seeking. The fact that you’ve addressed a *real* pain point (lack of tests) with AI will resonate in interviews. As a product, an AI test generator could be sold to enterprises to improve their coverage (companies spend millions on testing and still ship bugs, so there’s money here). For instance, a niche product could be “AI tests for React apps” that specifically generate UI component tests. Even at smaller scale, your tool could be open-sourced to gain GitHub traction, or used as a portfolio project that shows you care about code quality.
   **First milestone (1 week):** Target a specific scenario – e.g., **generate tests for a single function**. Choose a function with clear behavior (say it performs a calculation or parses input). Manually write down a couple of expected test cases (for validation), then have your tool produce tests. The deliverable: the **generated test code** and evidence that it runs correctly (you can show that running those tests passes, and maybe if you introduce a bug in the function, the tests catch it). For example, if the function is `calculate_discount(price, customer_type)`, your tool might generate tests for a regular customer vs. premium customer vs. negative price input. Achieving a meaningful test or two that actually asserts correct behavior (or catches a seeded bug) is a tangible proof-of-concept.
+
+# Technical Skill Sets to Level-Up
+
+| Domain | Skills to Acquire | Why It Matters |
+|--------|------------------|----------------|
+| **Gen AI & ML Ops** | - **LLM fine-tuning & adapters** (LoRA, QLoRA)<br>- **Quantization & distillation** (GGUF, AWQ, BK4)<br>- **RAG pipelines** — embedding generation, Milvus/Faiss, chunking strategies<br>- **Voice stack** — ASR (Whisper), TTS (Tortoise, Piper), WebRTC basics<br>- **Agent frameworks & orchestration** (LangChain, LlamaIndex, Temporal, Autogen)<br>- **Model-eval harnesses** (lm-eval-harness, custom runners)<br>- **On-device inference** (llama.cpp / MLC on Apple Silicon) | Powers your personal assistant, vertical agents, and local-first AI experiments. |
+| **Backend Performance & Infra** | - **Node.js deep performance** — worker threads, event-loop latency, GC tuning<br>- **Observability tooling** — flamegraphs, pprof, perf, OpenTelemetry<br>- **API design** — REST / gRPC / GraphQL with strict SLAs<br>- **Distributed-system patterns** — sharding, leader election, eventual consistency<br>- **Message & workflow engines** — Kafka, NATS, Temporal | Keeps high-throughput back-ends fast and fault-tolerant. |
+| **Databases & Data Engineering** | - **MySQL/PostgreSQL mastery** — index design, query-plan analysis<br>- **Vector & time-series stores** — Milvus, Redis-Vector, Qdrant<br>- **Big-data tooling** — Spark, Arrow, Parquet<br>- **CRDTs & real-time sync** — Yjs, Automerge | Reliable storage for embeddings, logs, and real-time state. |
+| **Cloud & DevOps** | - **Container & serverless GPU workflows** — Docker, Kubernetes, Modal, Replicate<br>- **IaC & CI/CD** — Terraform/Pulumi + GitHub Actions<br>- **Cost monitoring & spot-GPU optimisation** | Enables rapid, cost-efficient AI iteration. |
+| **Security & Auth** | - **IAM, OAuth2/OIDC, JWT best practices**<br>- **TLS/HTTPS hygiene, OWASP Top 10** | Essential for any user-facing assistant or SaaS. |
+| **Front-End & UX for AI Tools** | - **React + TypeScript / Next.js** with streaming UI<br>- **Web Audio & Media APIs** for voice mode<br>- **PWA fundamentals** — service workers, offline caching | Provides a slick, extensible UI. |
+| **Automation & CLI Mastery** | - **Shell scripting & Brew internals**<br>- **ripgrep, fd, jq, knip, fzf** for code-base spelunking<br>- **Repo intelligence** — Sourcegraph, DeepWiki, CodeQL basics | Super-charges productivity and code comprehension. |
+| **Testing & Quality** | - **AI-augmented UI testing** — Playwright, Appium + vision models<br>- **Load & chaos testing** for distributed services | Raises confidence in rapid releases. |
+| **Reinforcement Learning (optional)** | - **Deep RL algorithms** — Double DQN, PPO<br>- **Gymnasium / PettingZoo** environment tools | Supports RL-based project ideas. |
+
+---
+
+## Execution Plan (Suggested)
+
+1. **6-Week Focus Blocks** – Pick one domain at a time (e.g., start with *LLM fine-tuning*, then *Node.js performance*, then *Vector DBs*).  
+2. **Ship a Micro-Project per Block** – Example: fork a voice-enabled assistant repo and swap in your own quantized model.  
+3. **Instrument Early** – Add OpenTelemetry + flamegraphs from day one to weave performance habits into every build.  
+4. **Automate Repetition** – Turn recurring cloud or Brew tasks into shell aliases or GitHub Actions.
+
+---
