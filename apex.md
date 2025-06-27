@@ -423,3 +423,12 @@ A comprehensive roadmap organized by action type for achieving technical excelle
 4. **Automate Repetition** – Turn recurring cloud or Brew tasks into shell aliases or GitHub Actions.
 
 ---
+| Phase                            | Months | Must-Do Outputs                                                                                                                                                      | Skills Locked-In                                                |
+| -------------------------------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
+| **0 – 3 : Foundations**          | 1-3    | • Master one low-level (lang: Rust/Go) + one high-level (lang: Python)<br>• 100 LeetCode mediums + DDIA ch 1-6 summaries<br>• Whiteboard “Design Reddit” in < 40 min | Algorithms, OS + networking basics, system-design vocabulary    |
+| **3 – 6 : Distributed & Cloud**  | 4-6    | • Toy **Raft KV-store** with chaos tests<br>• Terraform-built 3-node K8s cluster on AWS<br>• Grafana dashboards + alerting                                           | Consensus, K8s, Terraform, Prometheus, real SRE debugging       |
+| **6 – 9 : ML Core**              | 7-9    | • Finish fast.ai + Ng DL Spec<br>• Code a mini-Transformer from scratch<br>• Blog “Transformer in 150 LOC”                                                           | PyTorch, back-prop math, model-debug workflow                   |
+| **9 – 12 : AI-Infra Fusion**     | 10-12  | • Distributed GPU training w/ Horovod<br>• Sub-50 ms p95 inference on K8s autoscaling stack<br>• Weekend Mojo kernel port + write-up                                 | Multi-node training, model serving, low-latency tuning          |
+| **12 – 15 : Flagship OSS**       | 13-15  | • **Pick one:** mini Vector-DB *or* real-time Safety Filter<br>• Public repo, MIT licence, ≥1 outside contributor<br>• 10-min meetup talk                            | End-to-end architecture, community maintenance, tech evangelism |
+| **15 – 18 : Polish & Placement** | 16-18  | • 150 LeetCode *hards* + 10 mock system-designs<br>• Blog series “My 18-mo climb” → LinkedIn + HN<br>• Targeted apps + referrals (OpenAI, Anthropic, DeepMind, etc.) | Interview muscle memory, personal brand, warm pipelines         |
+
