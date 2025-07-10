@@ -94,3 +94,15 @@
 [submodule "resources/awesome-ai-ml-resources"]
 	path = resources/awesome-ai-ml-resources
 	url = https://github.com/armankhondker/awesome-ai-ml-resources.git
+[submodule "resources/interview_help"]
+	path = resources/interview_help
+	url = https://github.com/Olshansk/interview
+[submodule "questionnaires/grokking-oop"]
+	path = questionnaires/grokking-oop
+	url = https://github.com/tssovi/grokking-the-object-oriented-design-interview.git
+[submodule "hiring/company_list"]
+	path = hiring/company_list
+	url = https://github.com/Kaustubh-Natuskar/moreThanFAANGM.git
+[submodule "hiring/remote_list"]
+	path = hiring/remote_list
+	url = https://github.com/remoteintech/remote-jobs.git
