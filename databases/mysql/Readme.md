@@ -1,1 +1,0 @@
-# Course By [PlanetScale](https://planetscale.com/courses/mysql-for-developers/)

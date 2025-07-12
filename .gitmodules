@@ -37,21 +37,9 @@
 [submodule "resources/system-design"]
 	path = resources/system-design
 	url = https://github.com/karanpratapsingh/system-design.git
-[submodule "resources/links/hacking"]
-	path = resources/links/hacking
-	url = https://gist.github.com/rava-dosa/4e425406efe8112a260ff364befe1d46
 [submodule "hiring/international"]
 	path = hiring/international
 	url = https://gist.github.com/idontknowjs/22f3257bed32dd3ab99ff22316e51eb8
-[submodule "databases/mysql-commands"]
-	path = databases/mysql-commands
-	url = https://gist.github.com/hofmannsven/9164408
-[submodule "resources/links/yc"]
-	path = resources/links/yc
-	url = https://gist.github.com/rava-dosa/3a85ec745b38eacef0d34af7445af917
-[submodule "devops/basics"]
-	path = devops/basics
-	url = https://github.com/Tikam02/DevOps-Guide
 [submodule "questionnaires/frontend-end-interview-handbook"]
 	path = questionnaires/frontend-end-interview-handbook
 	url = https://github.com/yangshun/front-end-interview-handbook
@@ -61,21 +49,6 @@
 [submodule "questionnaires/js-advanced"]
 	path = questionnaires/js-advanced
 	url = https://github.com/lydiahallie/javascript-questions
-[submodule "resources/git"]
-	path = resources/git
-	url = https://github.com/k88hudson/git-flight-rules
-[submodule "resources/links/info"]
-	path = resources/links/info
-	url = https://gist.github.com/rava-dosa/ebbcc18323e80f74cb9434e5382d10b6
-[submodule "devops/best-practices"]
-	path = devops/best-practices
-	url = https://gist.github.com/jpswade/4135841363e72ece8086146bd7bb5d91
-[submodule "resources/cff08fe3e0bb857ea33b47d965b3e19f"]
-	path = resources/cff08fe3e0bb857ea33b47d965b3e19f
-	url = https://gist.github.com/kconner/cff08fe3e0bb857ea33b47d965b3e19f
-[submodule "hiring/assignment"]
-	path = hiring/assignment
-	url = https://github.com/PestoTech/takehome
 [submodule "resources/system-design-101"]
 	path = resources/system-design-101
 	url = https://github.com/ByteByteGoHq/system-design-101.git
@@ -85,12 +58,6 @@
 [submodule "resources/multiple"]
 	path = resources/multiple
 	url = https://github.com/taogen-docs/resources-of-learning.git
-[submodule "resources/lld"]
-	path = resources/lld
-	url = https://github.com/kumaransg/LLD.git
-[submodule "resources/kubectl"]
-	path = resources/kubectl
-	url = https://gist.github.com/dims/bb219a4a8d9cb88dc2a2dc1f11a537c6
 [submodule "resources/awesome-ai-ml-resources"]
 	path = resources/awesome-ai-ml-resources
 	url = https://github.com/armankhondker/awesome-ai-ml-resources.git
