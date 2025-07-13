@@ -73,3 +73,6 @@
 [submodule "hiring/remote_list"]
 	path = hiring/remote_list
 	url = https://github.com/remoteintech/remote-jobs.git
+[submodule "resources/university"]
+	path = resources/university
+	url = https://github.com/ossu/computer-science
