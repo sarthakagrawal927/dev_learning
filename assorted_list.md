@@ -63,3 +63,5 @@ Use Case:: Streaming file Sync
 - https://en.wikipedia.org/wiki/Galactic_algorithm
 - https://blog.startifact.com/posts/succinct/
 - https://stackoverflow.com/questions/72580828/what-is-a-succinct-rank-data-structure-how-does-it-work
+- https://blog.jcole.us/innodb/
+- https://drew.silcock.dev/blog/how-postgres-stores-data-on-disk/
