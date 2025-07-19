@@ -39,3 +39,5 @@ Study HyperLogLog (like Bloom Filter), Streams (like pub-sub).
 ### PostgreSQL
 
 Very flexible & Scalable. Use explain before query to understand the query plan. Creating index is the way to go for faster queries. Can have JSON as value in a column.
+
+[Mysql Internals](https://enhancedformysql.github.io/The-Art-of-Problem-Solving-in-Software-Engineering_How-to-Make-MySQL-Better)
