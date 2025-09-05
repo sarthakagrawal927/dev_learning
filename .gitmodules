@@ -76,3 +76,6 @@
 [submodule "resources/university"]
 	path = resources/university
 	url = https://github.com/ossu/computer-science
+[submodule "resources/low-level-design"]
+	path = resources/low-level-design
+	url = https://github.com/ashishps1/awesome-low-level-design
