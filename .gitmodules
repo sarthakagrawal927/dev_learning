@@ -55,9 +55,6 @@
 [submodule "resources/system-design-q"]
 	path = resources/system-design-q
 	url = https://github.com/ashishps1/awesome-system-design-resources.git
-[submodule "resources/multiple"]
-	path = resources/multiple
-	url = https://github.com/taogen-docs/resources-of-learning.git
 [submodule "resources/awesome-ai-ml-resources"]
 	path = resources/awesome-ai-ml-resources
 	url = https://github.com/armankhondker/awesome-ai-ml-resources.git
@@ -79,3 +76,6 @@
 [submodule "resources/low-level-design"]
 	path = resources/low-level-design
 	url = https://github.com/ashishps1/awesome-low-level-design
+[submodule "questionnaires/system-design"]
+	path = questionnaires/system-design
+	url = https://github.com/arpitbbhayani/system-design-questions.git
