@@ -1,5 +1,8 @@
 # intermediate_web
 
+![AI Generated](https://ai-percentage-pin.vercel.app/api/ai-percentage?value=5)
+![AI PRs Welcome](https://ai-percentage-pin.vercel.app/api/ai-prs?welcome=yes)
+
 Has a lot of interesting submodules. Keep them updated
 
 ```bash
