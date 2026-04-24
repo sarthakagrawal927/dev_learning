@@ -79,3 +79,9 @@
 [submodule "questionnaires/system-design"]
 	path = questionnaires/system-design
 	url = https://github.com/arpitbbhayani/system-design-questions.git
+[submodule "questionnaires/interview-company-wise-problems"]
+	path = questionnaires/interview-company-wise-problems
+	url = https://github.com/liquidslr/interview-company-wise-problems
+[submodule "resources/ml-system-design-case-studies"]
+	path = resources/ml-system-design-case-studies
+	url = https://github.com/Engineer1999/A-Curated-List-of-ML-System-Design-Case-Studies
