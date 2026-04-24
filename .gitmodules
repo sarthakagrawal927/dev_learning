@@ -64,6 +64,7 @@
 [submodule "questionnaires/grokking-oop"]
 	path = questionnaires/grokking-oop
 	url = https://github.com/tssovi/grokking-the-object-oriented-design-interview.git
+	ignore = dirty
 [submodule "hiring/company_list"]
 	path = hiring/company_list
 	url = https://github.com/Kaustubh-Natuskar/moreThanFAANGM.git
